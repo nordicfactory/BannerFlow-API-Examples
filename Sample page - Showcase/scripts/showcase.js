@@ -41,8 +41,17 @@ function initShowcase() {
 	// The user is allowed to choose which network/affiliate platform to export the banner to
 	apiCallAsync('/accounts/' + apiAccountSlug + '/networks', function(networkList) {
 		// Success
-		networks = networkList;
-		
+	    networks = networkList;
+
+	    // Sort networks by name
+		networks = networks.sort(function compare(a, b) {
+		    if (a.name < b.name)
+		        return -1;
+		    if (a.name > b.name)
+		        return 1;
+		    return 0;
+		});
+
 		// Add each network to the export drop-down-list
 		for (var i=0; i<networks.length; i++) {
 			addListItem($('#ddlNetworks'), networks[i]);
