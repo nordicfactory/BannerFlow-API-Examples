@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>My banner showcase</title>
+		<link href="styles/css-reset.css" rel="stylesheet" type="text/css" />
+		<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="scripts/showcase.js"></script>
+	</head>
+	<body>
+
+		<div id="header">
+			<div class="logo"></div>
+			<div id="loading">
+				<div class="spinner">
+					<div class="double-bounce1"></div><div class="double-bounce2"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="contents">
+			<!-- View that presents brands within specified account -->
+			<div id="brands" class="section">
+				<h3>Brands</h3>
+				<ul class="list">
+					<li class="template dropshadow" data-brandid="{id}">
+						<div class="logo" style="background-image: url({logoUrl});">
+							
+						</div>
+						<div class="name">
+							{name}
+						</div>
+						
+					</li>
+				</ul>
+				
+			</div>
+			
+			<!-- View that presents campaigns within selected brand -->
+			<div id="campaigns" class="section">
+				<button class="back">Back</button>
+				<h3>Campaigns</h3>
+				
+				<ul class="list">
+					<li class="template dropshadow" data-campaignid="{id}">
+						<div class="logo" style="background-image: url({thumbnailUrl});">
+							
+						</div>
+						<div class="name">
+							{name}
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			
+			<!-- View that presents banners within selected campaign -->
+			<div id="campaign" class="section">
+				<button class="back">Back</button>
+				<h3>Campaign</h3>
+				
+				<ul class="list">
+					<li class="template dropshadow" data-bannerid="{id}">
+						<div class="logo" style="background-image: url({thumbnailUrl});">
+							
+						</div>
+						<div class="name">
+							<div class="flag" style="background-image: url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.4/flags/1x1/{text.culture.cultureCode}.svg)"></div>
+							<div class="size">{size.width}x{size.height}px</div>
+							<div style="clear: both"></div>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+			
+			<!-- View that presents specific banner within selected campaign -->
+			<div id="banner" class="section">
+				<button class="back">Back</button>
+				<h3>Banner</h3>
+				
+				<div class="preview dropshadow">
+					<div id="banner-preview"></div>
+					
+					<div class="details">
+						<div class="flag"></div>
+						<div class="name"></div>
+						<div class="filesize"></div>
+						<div style="clear: both"></div>
+					</div>
+				</div>
+				<div class="export dropshadow">
+					<div class="settings">
+						Export to <select id="ddlNetworks"><option class="template" value="{name}">{name}</option></select>
+						<input type="checkbox" checked="checked" id="chkAnimated" /> Animated 
+						<input type="checkbox" checked="checked" id="chkPoliteLoading" /> Polite loading 
+						<input type="checkbox" id="chkResponsive" /> Responsive
+					</div>
+					
+					<div class="code">
+						
+					</div>
+				</div>
+			</div>
+		
+			<div style="clear:both"></div>
+		</div>
+		<div id="footer">
+			<div class="logo"></div>
+			Powered by BannerFlow
+		</div>
+		
+	</body>
+</html>
