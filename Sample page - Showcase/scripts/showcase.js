@@ -47,9 +47,10 @@ function initShowcase() {
 		for (var i=0; i<networks.length; i++) {
 			addListItem($('#ddlNetworks'), networks[i]);
 		}
-		
-		// Pre-select the BannerFlow option
-		$('#ddlNetworks').val('BannerFlow');
+
+	    // Pre-select the BannerFlow network/export option
+		var predefinedNetwork = networks.filter(function (n) { return n.name.toString().toLowerCase().indexOf('bannerflow') == 0; })[0];
+		$('#ddlNetworks').val(predefinedNetwork.name);
 
 	}, function() {
 		// Error
