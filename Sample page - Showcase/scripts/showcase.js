@@ -186,8 +186,8 @@ function showCampaign(campaign) {
 					if (foundText.length > 0)
 						banner.text = foundText[0];
 						
-					// Fix to avoid browsers from using the file:// protocol when running this page locally
-					banner.tag = banner.tag.replace('"//', '"https://').replace("'//", "'https://");
+				    // Fix to avoid browsers from using the file:// protocol when running this page locally and prepare for inline iframe preview
+					banner.tag = banner.tag.replace('"//', '"https://').replace("'//", "'https://").replace(/"/gi, "'");
 				}
 				
 				currentBanners = banners;
