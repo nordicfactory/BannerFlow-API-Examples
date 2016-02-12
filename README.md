@@ -12,3 +12,6 @@ This project is written in C#.NET, containing the essentials for communicating w
 This is a plain HTML/JavaScript web page that uses AJAX to retrieve and present data from your BannerFlow account via REST API requests. It presents the brands that are accessible through the API and allows the user to browser deeper into a brand's campaigns and their banners.
 
 *Note that this sample only requires read permissions.*
+
+### Sample - ASP.NET - Partner referrals dashboard
+This is a C#.NET application that retrieves and lists a partner's registered accounts.
