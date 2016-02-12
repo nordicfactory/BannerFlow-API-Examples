@@ -1,0 +1,6 @@
+C:\Users\danie_000\Work\BannerFlowAPI-Examples\Sample - ASP.NET - Partner referrals dashboard\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\danie_000\Work\BannerFlowAPI-Examples\Sample - ASP.NET - Partner referrals dashboard\WebApplication1\bin\WebApplication1.dll
+C:\Users\danie_000\Work\BannerFlowAPI-Examples\Sample - ASP.NET - Partner referrals dashboard\WebApplication1\bin\WebApplication1.pdb
+C:\Users\danie_000\Work\BannerFlowAPI-Examples\Sample - ASP.NET - Partner referrals dashboard\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\danie_000\Work\BannerFlowAPI-Examples\Sample - ASP.NET - Partner referrals dashboard\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\danie_000\Work\BannerFlowAPI-Examples\Sample - ASP.NET - Partner referrals dashboard\WebApplication1\obj\Debug\WebApplication1.pdb
